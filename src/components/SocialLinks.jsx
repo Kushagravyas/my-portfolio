@@ -13,7 +13,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: 'www.linkedin.com/in/kushagra-vyas-141394256',
+      href: 'https://www.linkedin.com/in/kushagra-vyas-141394256/',
       style: 'rounded-tr-md'
     },
     {
