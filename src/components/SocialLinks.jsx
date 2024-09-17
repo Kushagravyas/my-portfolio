@@ -41,7 +41,7 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: 'https://linkedin.com',
+      href: 'Kushagra_resume.pdf',
       style: 'rounded-br-md',
       download: true,
     }
