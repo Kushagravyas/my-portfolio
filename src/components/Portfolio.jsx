@@ -1,38 +1,31 @@
 import React from "react";
-import eCommerce from '../assets/portfolio/eCommerce.png'
-import installNode from '../assets/portfolio/installNode.jpg'
+import Dashboard from '../assets/portfolio/Dashboard.png'
 import navbar from '../assets/portfolio/navbar.jpg'
 import spotifyClone from '../assets/portfolio/spotifyClone.png'
-import reactSmooth from '../assets/portfolio/reactSmooth.jpg'
-import reactWeather from '../assets/portfolio/reactWeather.jpg'
+
 
 const Portfolio = () => {
 
     const portfolios = [
       {
         id: 1, 
-        src: eCommerce
+        src: Dashboard,
+        code: "https://github.com/Kushagravyas/shoppy-dashboard-app.git",
+        demo:"https://dashboard-app-phi-ochre.vercel.app"
       },
       {
         id: 2, 
-        src: spotifyClone
+        src: spotifyClone,
+        code: "https://github.com/Kushagravyas/spotify-clone.git",
+        demo: "https://clonespotifi.netlify.app/"
       },
       {
         id: 3, 
-        src: navbar
+        src: navbar,
+        code: "https://www.google.com"
       },
-      {
-        id: 4, 
-        src: reactSmooth
-      },
-      {
-        id: 5, 
-        src: installNode
-      },
-      {
-        id: 6, 
-        src: reactWeather
-      },
+      
+    
       
     ]
 
@@ -49,15 +42,15 @@ const Portfolio = () => {
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
 
           {
-            portfolios.map(({id, src}) => (
+            portfolios.map(({id, src,code,demo}) => (
               <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
                  <img src={src} 
                  alt=""
                  className="rounded-md duration-200 hover:scale-105"
                  />
                  <div className="flex items-center justify-center">
-                    <button className="w-1/2 px-6 py-1 m-4 duration-200 hover:scale-105">Demo</button>
-                    <button className="w-1/2 px-6 py-1 m-4 duration-200 hover:scale-105">Code</button>  
+                    <button className="w-1/2 px-6 py-1 m-4 duration-200 hover:scale-105"><a href={demo} target="_blank" rel="noreferrer">Demo</a></button>
+                    <button className="w-1/2 px-6 py-1 m-4 duration-200 hover:scale-105"><a href={code} target="_blank" rel="noreferrer">Code</a></button>  
                  </div>
              </div>
             ))
