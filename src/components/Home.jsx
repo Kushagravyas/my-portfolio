@@ -9,7 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     const options = {
-      strings: ["Full Stack Developer", "Designer", "Tech Enthusiast", "Guitarist"],
+      strings: ["Full Stack Developer", "Frontend Developer", "Designer", "Cricketer"],
       typeSpeed: 50,
       backSpeed: 50,
       backDelay: 1000,
@@ -29,7 +29,7 @@ const Home = () => {
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full"> 
           {/* Dynamic Typed.js Text */}
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
+          <h2 className="text-2xl sm:text-4xl font-bold text-white">
             I'm a <span ref={typedElement}></span>
           </h2>
           
@@ -56,7 +56,7 @@ const Home = () => {
           <img 
             src={myImage} 
             alt="my profile" 
-            className="rounded-full mx-auto w-2/3 md:w-full"
+            className="rounded-full mx-auto w-2/3 md:w-100"
           />
         </div>
       </div>
