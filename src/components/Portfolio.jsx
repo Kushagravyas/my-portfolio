@@ -1,6 +1,6 @@
 import React from "react";
 import Dashboard from '../assets/portfolio/Dashboard.png'
-import navbar from '../assets/portfolio/navbar.jpg'
+import Image_slider from '../assets/portfolio/animal.png'
 import spotifyClone from '../assets/portfolio/spotifyClone.png'
 
 
@@ -21,8 +21,9 @@ const Portfolio = () => {
       },
       {
         id: 3, 
-        src: navbar,
-        code: "https://www.google.com"
+        src: Image_slider,
+        code: "https://github.com/Kushagravyas/Animal-image-slider.git",
+        demo: "https://kushagravyas.github.io/Animal-image-slider/"
       },
       
     
