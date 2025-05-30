@@ -1,7 +1,9 @@
 import React from "react";
 import Dashboard from '../assets/portfolio/Dashboard.png'
 import Image_slider from '../assets/portfolio/animal.png'
-import spotifyClone from '../assets/portfolio/spotifyClone.png'
+import StockGenius from '../assets/portfolio/Stockgenius.png'
+import EventIT from '../assets/portfolio/Eventit.png'
+import AICodeReviewer from '../assets/portfolio/codereviewer.png'
 
 
 const Portfolio = () => {
@@ -9,24 +11,34 @@ const Portfolio = () => {
     const portfolios = [
       {
         id: 1, 
-        src: Dashboard,
-        code: "https://github.com/Kushagravyas/shoppy-dashboard-app.git",
-        demo:"https://dashboard-app-phi-ochre.vercel.app"
+        src: StockGenius,
+        code: "https://github.com/Kushagravyas/StockGenius.git",
+        demo:"https://stock-genius-ivory.vercel.app/"
       },
       {
         id: 2, 
-        src: spotifyClone,
-        code: "https://github.com/Kushagravyas/spotify-clone.git",
-        demo: "https://clonespotifi.netlify.app/"
+        src: AICodeReviewer,
+        code: "https://github.com/Kushagravyas/Minor_project.git",
+        demo:"https://minor-project-khaki-one.vercel.app/"
       },
       {
         id: 3, 
+        src: EventIT,
+        code: "https://github.com/Kushagravyas/EventIT.git",
+        demo:"https://kushagravyas.github.io/EventIT/"
+      },
+      {
+        id: 4, 
         src: Image_slider,
         code: "https://github.com/Kushagravyas/Animal-image-slider.git",
         demo: "https://kushagravyas.github.io/Animal-image-slider/"
       },
-      
-    
+      {
+        id: 5, 
+        src: Dashboard,
+        code: "https://github.com/Kushagravyas/shoppy-dashboard-app.git",
+        demo: "dashboard-app-phi-ochre.vercel.app"
+      },
       
     ]
 
