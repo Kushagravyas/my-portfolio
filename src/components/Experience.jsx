@@ -7,7 +7,11 @@ import node from "../assets/node.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import java from "../assets/java.png";
-import sql from "../assets/sql.png"
+import sql from "../assets/sql.png";
+import mongodb from "../assets/mongodb.png";
+import aws1 from "../assets/aws1.png";
+import expressjs from "../assets/expressjs.png";
+
 
 
 
@@ -69,6 +73,24 @@ const Experience = () => {
         src: node,
         title: 'Node JS',
         style: 'shadow-orange-500'
+    },
+    {
+        id: 10, 
+        src: mongodb,
+        title: 'MongoDB',
+        style: 'shadow-green-500'
+    },
+    {
+        id: 11, 
+        src: expressjs,
+        title: 'Express JS',
+        style: 'shadow-yellow-400'
+    },
+    {
+        id: 12, 
+        src: aws1,
+        title: 'AWS',
+        style: 'shadow-purple-500'
     },
    ];
 
