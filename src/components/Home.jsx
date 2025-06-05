@@ -26,10 +26,12 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="w-full min-h-screen h-auto sm:h-screen pt-20 md:pt-24 bg-[#0a192f] text-gray-300"
+      className="w-full min-h-screen h-auto sm:h-screen pt-24 bg-[#0a192f] text-gray-300"
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col-reverse md:flex-row items-center justify-center h-full px-4 md:px-8">
-        <div className="flex flex-col justify-center h-full md:w-1/2 mt-8 md:mt-0">
+      {/* Reduced gap by adjusting px values and margins */}
+      <div className="max-w-screen-lg mx-auto flex flex-col-reverse md:flex-row items-start md:items-center justify-center h-full px-2 md:px-4">
+        {/* Left content - reduced margin top */}
+        <div className="flex flex-col justify-center h-full md:w-1/2 mt-4 md:mt-0">
           <div className="mb-4 md:mb-8">
             <h1 className="text-xl sm:text-3xl font-light mb-2 md:mb-4">
               Hello, I'm
@@ -82,13 +84,24 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="md:w-1/2 flex justify-center items-center">
-          <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-[500px]">
-            <img
-              src={myImage || "/placeholder.svg"}
-              alt="Kushagra's profile"
-              className="w-full h-full object-contain"
-            />
+        {/* Image section - reduced margins */}
+        <div className="md:w-1/2 flex justify-center items-center w-full mt-8 md:mt-0 mb-4 md:mb-0">
+          <div className="relative">
+            <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-[500px]
+              overflow-visible"
+            >
+              <div className="absolute inset-0 -top-6">
+                <img
+                  src={myImage || "/placeholder.svg"}
+                  alt="Kushagra's profile"
+                  className="w-full h-full object-contain object-top"
+                />
+              </div>
+              
+              {/* Gradient overlays */}
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0a192f] opacity-40" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a192f] to-transparent opacity-40" />
+            </div>
           </div>
         </div>
       </div>
