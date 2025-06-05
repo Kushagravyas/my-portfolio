@@ -115,29 +115,56 @@ const Experience = () => {
           </p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-center px-2 sm:px-0">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center px-2 sm:px-0">
           {techs.map(({ id, src, title, style, gradient }) => (
             <div
               key={id}
-              className={`relative group bg-white/5 rounded-lg p-3 hover:scale-105 duration-300 ${style}`}
+              className={`relative group bg-white/5 rounded-xl p-4
+                hover:scale-110 hover:-translate-y-2 hover:rotate-3
+                duration-500 cursor-pointer
+                border border-transparent hover:border-opacity-100
+                transition-all ${style}
+                transform perspective-1000 hover:shadow-2xl
+                [transform-style:preserve-3d]`}
             >
-              {/* Background gradient on hover */}
-              <div
-                className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-0 group-hover:opacity-10 transition-all duration-300 rounded-lg`}
-              ></div>
+              {/* Deep shadow for 3D depth */}
+              <div className={`absolute -inset-1 bg-gradient-to-br ${gradient} 
+                opacity-0 group-hover:opacity-70 blur-xl transition-all duration-500 rounded-xl
+                transform -translate-y-4 -z-10 group-hover:translate-z-0`} />
+              
+              {/* Inner glow */}
+              <div className={`absolute inset-0.5 bg-gradient-to-br ${gradient} 
+                opacity-0 group-hover:opacity-20 transition-all duration-500 rounded-xl
+                transform [transform-style:preserve-3d] translate-z-12`} />
 
-              <div className="relative z-10">
-                <div className="w-12 h-12 mx-auto mb-2 p-2 rounded-md group-hover:bg-white/10 transition-all duration-300">
+              {/* Content wrapper */}
+              <div className="relative transform transition-transform duration-500 
+                [transform-style:preserve-3d] group-hover:[transform:translateZ(20px)]">
+                {/* Icon container */}
+                <div className="w-12 h-12 mx-auto mb-3 p-2 rounded-lg 
+                  group-hover:bg-white/10 transition-all duration-500
+                  transform group-hover:rotate-6 group-hover:scale-110
+                  [transform-style:preserve-3d] group-hover:[transform:translateZ(30px)]">
                   <img
                     src={src}
                     alt={title}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain drop-shadow-2xl
+                      transform transition-all duration-500 group-hover:rotate-[-6deg]"
                   />
                 </div>
-                <p className="text-sm font-medium text-gray-300 group-hover:text-white">
+
+                {/* Title */}
+                <p className="text-sm font-medium text-gray-300 group-hover:text-white
+                  transform transition-all duration-500
+                  [transform-style:preserve-3d] group-hover:[transform:translateZ(20px)]">
                   {title}
                 </p>
               </div>
+
+              {/* Back face shadow */}
+              <div className={`absolute inset-0 bg-black/50 
+                opacity-0 group-hover:opacity-100 transition-all duration-500 rounded-xl
+                transform -translate-z-12`} />
             </div>
           ))}
         </div>
