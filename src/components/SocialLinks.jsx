@@ -77,7 +77,7 @@ const SocialLinks = () => {
             <a
               href={href}
               className="relative z-10 flex justify-between items-center w-full text-white font-semibold transform transition-all duration-300 group-hover:scale-105"
-              download={download ? "true" : undefined}
+              download={download ? "KushagraVyas Resume" : undefined}
               target="_blank"
               rel="noreferrer"
             >
