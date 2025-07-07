@@ -1,4 +1,4 @@
-"use client"
+
 
 import React, { useState } from "react"
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa"
@@ -13,9 +13,10 @@ const Navbar = () => {
   const links = [
     { id: 1, link: "home" },
     { id: 2, link: "about" },
-    { id: 3, link: "portfolio" },
-    { id: 4, link: "experience" },
-    { id: 5, link: "contact" },
+     { id: 3, link: "experience" },
+    { id: 4, link: "Projects" },
+    { id: 5, link: "Technologies" },
+    { id: 6, link: "contact" },
   ]
 
   const socialLinks = [
