@@ -55,7 +55,12 @@ const Experience = () => (
                 {tech.map((item, idx) => (
                   <span
                     key={idx}
-                    className="px-2 py-0.5 text-xs bg-white/10 rounded-full text-gray-400 group-hover:bg-white/20 group-hover:text-gray-200 transition-all duration-500"
+                    className="px-2 py-0.5 text-xs rounded-full 
+        bg-gradient-to-r from-blue-300 to-gray-300 
+        text-blue-900 font-semibold
+        group-hover:from-blue-400 group-hover:to-gray-400
+        group-hover:text-gray-900
+        transition-all duration-500"
                   >
                     {item}
                   </span>
