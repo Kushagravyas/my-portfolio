@@ -33,9 +33,9 @@ const About = () => {
           <p className="text-xl leading-relaxed text-gray-100 mt-6 animate-fadeInUp animation-delay-1500">
             Through my recent{" "}
             <span className="bg-gradient-to-r from-pink-400 to-yellow-400 bg-clip-text text-transparent font-semibold">
-              React Developer internship
+              React Developer and FullStack Developer internship
             </span>
-            , I honed my expertise in front-end frameworks, working on real-world projects that emphasized responsive
+            , I honed my expertise in both front-end and backend, working on real-world projects that emphasized responsive
             design, dynamic user interfaces, and seamless user experiences. I thrive in collaborative environments,
             where I can contribute to innovative solutions and develop efficient, scalable applications alongside
             talented teams.
