@@ -3,6 +3,7 @@ import Image_slider from "../assets/portfolio/animal.png"
 import StockGenius from '../assets/portfolio/Stockgenius.png'
 import EventIT from '../assets/portfolio/Eventit.png'
 import AICodeReviewer from '../assets/portfolio/codereviewer.png'
+import TaskBoard from '../assets/portfolio/Taskboard.png'
 
 const Portfolio = () => {
   const portfolios = [
@@ -66,6 +67,18 @@ const Portfolio = () => {
       glowColor: "hover:shadow-[0_0_2rem_-0.5rem_#f43f5e]",
       buttonGlow: "hover:shadow-[0_0_1rem_#f43f5e66]"
     },
+    {
+      id: 6,
+      src: TaskBoard,
+      title: "Task Board App",
+      description: "An personalized Task management app.",
+      code: "https://github.com/Kushagravyas/Task-Board-App",
+      demo: "https://task-board-app-1nni.vercel.app/",
+      tech: ["HTML", "CSS", "JavaScript","React"],
+     gradient: "from-yellow-400 to-lime-500",
+      glowColor: "hover:shadow-[0_0_2rem_-0.5rem_#84cc16]",
+      buttonGlow: "hover:shadow-[0_0_1rem_#84cc1666]" 
+    }
   ]
 
   return (
