@@ -10,6 +10,10 @@ import sql from "../assets/sql.png"
 import mongodb from "../assets/mongodb.png";
 import aws1 from "../assets/aws1.png";
 import expressjs from "../assets/expressjs.png";
+import python from "../assets/pythonlogo.png";
+import redis from "../assets/redislogo.png";
+import docker from "../assets/Dockerlogo.png";
+import linux from "../assets/linuxlogo.webp";
 
 
 const Experience = () => {
@@ -58,45 +62,73 @@ const Experience = () => {
     },
     {
       id: 7,
+      src: python,
+      title: "Python",
+      style: "shadow-yellow-700/50 hover:shadow-yellow-600/70",
+      gradient: "from-yellow-400 to-yellow-600",
+    },
+    {
+      id: 8,
       src: sql,
       title: "SQL",
       style: "shadow-pink-400/50 hover:shadow-purple-400/70",
       gradient: "from-pink-400 to-purple-500",
     },
     {
-      id: 8,
-      src: github,
-      title: "GitHub",
-      style: "shadow-gray-400/50 hover:shadow-slate-400/70",
-      gradient: "from-gray-400 to-slate-600",
+      id: 9,
+      src: mongodb,
+      title: "MongoDB",
+      style: "shadow-green-500/50 hover:shadow-emerald-400/70",
+      gradient: "from-green-400 to-emerald-500"
     },
     {
-      id: 9,
+      id: 10,
       src: node,
       title: "Node JS",
       style: "shadow-green-500/50 hover:shadow-emerald-400/70",
       gradient: "from-green-500 to-emerald-600",
     },
     {
-        id: 10, 
-        src: mongodb,
-        title: 'MongoDB',
-        style: "shadow-green-500/50 hover:shadow-emerald-400/70",
-        gradient: "from-green-400 to-emerald-500"
+      id: 11,
+      src: expressjs,
+      title: "Express JS",
+      style: "shadow-yellow-500/50 hover:shadow-yellow-400/70",
+      gradient: "from-yellow-400 to-orange-500"
     },
     {
-        id: 11, 
-        src: expressjs,
-        title: 'Express JS',
-        style: "shadow-yellow-500/50 hover:shadow-yellow-400/70",
-        gradient: "from-yellow-400 to-orange-500"
+      id: 12,
+      src: redis,
+      title: "Redis",
+      style: "shadow-red-500/50 hover:shadow-red-400/70",
+      gradient: "from-red-400 to-red-600",
     },
     {
-        id: 12, 
-        src: aws1,
-        title: 'AWS',
-        style: "shadow-purple-500/50 hover:shadow-violet-400/70",
-        gradient: "from-purple-400 to-violet-600"
+      id: 13,
+      src: docker,
+      title: "Docker",
+      style: "shadow-blue-400/50 hover:shadow-blue-500/70",
+      gradient: "from-blue-300 to-blue-600",
+    },
+    {
+      id: 14,
+      src: linux,
+      title: "Linux",
+      style: "shadow-gray-500/50 hover:shadow-gray-700/70",
+      gradient: "from-gray-400 to-gray-700",
+    },
+    {
+      id: 15,
+      src: aws1,
+      title: "AWS",
+      style: "shadow-purple-500/50 hover:shadow-violet-400/70",
+      gradient: "from-purple-400 to-violet-600"
+    },
+    {
+      id: 16,
+      src: github,
+      title: "GitHub",
+      style: "shadow-gray-400/50 hover:shadow-slate-400/70",
+      gradient: "from-gray-400 to-slate-600",
     },
   ]
 
