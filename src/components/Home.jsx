@@ -60,7 +60,7 @@ const Home = () => {
               smooth={true}
               offset={-70}
               duration={500}
-              className="group relative overflow-hidden text-white w-full sm:w-fit px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 flex items-center justify-center rounded-xl bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/50"
+              className="group relative overflow-hidden text-white w-full sm:w-fit px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 flex items-center justify-center rounded-xl bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 cursor-pointer"
             >
               <span className="relative z-10 flex items-center text-sm md:text-base">
                 View Projects
@@ -79,7 +79,7 @@ const Home = () => {
               duration={500}
               className="group relative overflow-hidden text-white w-full sm:w-fit px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 flex items-center justify-center rounded-xl border-2 border-cyan-600 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25 transition-all duration-300 text-sm md:text-base"
             >
-              <span className="relative z-10">Get In Touch</span>
+              <span className="relative z-10 cursor-pointer">Get In Touch</span>
             </Link>
           </div>
         </div>
