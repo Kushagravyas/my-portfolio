@@ -55,7 +55,7 @@ const Home = () => {
 
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mt-4">
             <Link
-              to="portfolio"
+              to="Projects"
               spy={true}
               smooth={true}
               offset={-70}

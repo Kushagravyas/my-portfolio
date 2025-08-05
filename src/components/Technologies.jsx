@@ -13,7 +13,8 @@ import expressjs from "../assets/expressjs.png";
 import python from "../assets/pythonlogo.png";
 import redis from "../assets/redislogo.png";
 import docker from "../assets/Dockerlogo.png";
-import linux from "../assets/linuxlogo.webp";
+// import linux from "../assets/linuxlogo.webp";
+import CICD from "../assets/CI image.png";
 
 
 const techDomains = [
@@ -33,7 +34,7 @@ const techDomains = [
         src: css,
         title: "CSS",
         style: "shadow-blue-500/50 hover:shadow-blue-400/70",
-        gradient: "from-blue-400 to-cyan-500",
+        gradient: "from-blue-400 to-cyan-900",
       },
       {
         id: 3,
@@ -88,7 +89,7 @@ const techDomains = [
         src: expressjs,
         title: "Express JS",
         style: "shadow-yellow-500/50 hover:shadow-yellow-400/70",
-        gradient: "from-yellow-400 to-orange-500"
+        gradient: "from-yellow-200 to-orange-300"
       },
       {
         id: 10,
@@ -125,24 +126,24 @@ const techDomains = [
     techs: [
       {
         id: 13,
+        src: aws1,
+        title: "AWS",
+        style: "shadow-purple-500/50 hover:shadow-violet-400/70",
+        gradient: "from-purple-400 to-violet-600"
+      },
+      {
+        id: 14,
         src: docker,
         title: "Docker",
         style: "shadow-blue-400/50 hover:shadow-blue-500/70",
         gradient: "from-blue-300 to-blue-600",
       },
       {
-        id: 14,
-        src: linux,
-        title: "Linux",
-        style: "shadow-gray-500/50 hover:shadow-gray-700/70",
-        gradient: "from-gray-400 to-gray-700",
-      },
-      {
         id: 15,
-        src: aws1,
-        title: "AWS",
-        style: "shadow-purple-500/50 hover:shadow-violet-400/70",
-        gradient: "from-purple-400 to-violet-600"
+        src: CICD,
+        title: "CI/CD",
+        style: "shadow-yellow-400/50 hover:shadow-yellow-600/70",
+        gradient: "from-yellow-200 to-yellow-300",
       },
       {
         id: 16,
@@ -191,7 +192,7 @@ const TechGrid = ({ techs }) => (
 
 const Technologies = () => (
   <div
-    name="experience"
+    name="Technologies"
     className="w-full min-h-screen bg-[#0a192f] text-gray-300 py-8"
   >
     <div className="max-w-6xl mx-auto p-4 flex flex-col justify-center w-full">

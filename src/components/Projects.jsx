@@ -83,7 +83,7 @@ const Projects = () => {
 
   return (
     <div 
-      name="portfolio"
+      name="Projects"
       className="w-full min-h-screen py-8 bg-[#0a192f] text-gray-300"
     >
       <div className="max-w-4xl mx-auto p-4 flex flex-col justify-center w-full">

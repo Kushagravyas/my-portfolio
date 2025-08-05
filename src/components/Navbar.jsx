@@ -44,7 +44,7 @@ const Navbar = () => {
     {
       id: 4,
       child: <BsFillPersonLinesFill size={30} />,
-      href: "/KushagraVyasResume.pdf",
+      href: "/kushagra-Resume FullStack.pdf",
       style: "bg-[#565f69]/90",
       text: "Resume",
       download: true,
