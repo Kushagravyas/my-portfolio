@@ -1,9 +1,10 @@
 import Dashboard from "../assets/portfolio/Dashboard.png"
-import Image_slider from "../assets/portfolio/animal.png"
+// import Image_slider from "../assets/portfolio/animal.png"
 import StockGenius from '../assets/portfolio/Stockgenius.png'
 import EventIT from '../assets/portfolio/Eventit.png'
 import AICodeReviewer from '../assets/portfolio/codereviewer.png'
 import TaskBoard from '../assets/portfolio/Taskboard.png'
+import VectorFlow from '../assets/portfolio/VectorFlow.png'
 
 const Projects = () => {
   const projects = [
@@ -33,18 +34,33 @@ const Projects = () => {
     },
     {
       id: 3, 
+      src: VectorFlow,
+      title: "Vector Flow",
+      description: "A pipeline builder app with multiple modern AI platforms.",
+      code: "https://github.com/Kushagravyas/Vector-Flow",
+      demo: "https://vector-flow-two.vercel.app",
+      tech: [ "Python", "FAST API","React", "Tailwind", "JavaScript"],
+      // gradient: "from-blue-400 to-sky-500",
+      // glowColor: "hover:shadow-[0_0_2rem_-0.5rem_#3b82f6]",
+      // buttonGlow: "hover:shadow-[0_0_1rem_#3b82f666]"
+        gradient: "from-rose-400 to-orange-500",
+        glowColor: "hover:shadow-[0_0_2rem_-0.5rem_#f43f5e]",
+        buttonGlow: "hover:shadow-[0_0_1rem_#f43f5e66]"
+    },
+    {
+      id: 4, 
       src: EventIT,
       title: "EventIT calendar App.",
       description: "A modern calendar app with customized event selection.",
       code: "https://github.com/Kushagravyas/EventIT.git",
       demo: "https://kushagravyas.github.io/EventIT/",
       tech: ["React", "CSS", "JavaScript"],
-      gradient: "from-blue-400 to-sky-500",
+      gradient: "from-green-400 to-green-600",
       glowColor: "hover:shadow-[0_0_2rem_-0.5rem_#3b82f6]",
-      buttonGlow: "hover:shadow-[0_0_1rem_#3b82f666]"
+      buttonGlow: "hover:shadow-[0_0_3rem_#3b82f666]"
     },
     {
-      id: 4,
+      id: 5,
       src: Dashboard,
       title: "Dashboard App",
       description: "A modern dashboard with analytics and data visualization",
@@ -55,18 +71,18 @@ const Projects = () => {
       glowColor: "hover:shadow-[0_0_2rem_-0.5rem_#a855f7]",
       buttonGlow: "hover:shadow-[0_0_1rem_#a855f766]"
     },
-    {
-      id: 5,
-      src: Image_slider,
-      title: "Image Slider",
-      description: "An interactive image gallery with smooth transitions",
-      code: "https://github.com/Kushagravyas/Animal-image-slider.git",
-      demo: "https://kushagravyas.github.io/Animal-image-slider/",
-      tech: ["HTML", "CSS", "JavaScript"],
-      gradient: "from-rose-400 to-orange-500",
-      glowColor: "hover:shadow-[0_0_2rem_-0.5rem_#f43f5e]",
-      buttonGlow: "hover:shadow-[0_0_1rem_#f43f5e66]"
-    },
+    // {
+    //   id: 5,
+    //   src: Image_slider,
+    //   title: "Image Slider",
+    //   description: "An interactive image gallery with smooth transitions",
+    //   code: "https://github.com/Kushagravyas/Animal-image-slider.git",
+    //   demo: "https://kushagravyas.github.io/Animal-image-slider/",
+    //   tech: ["HTML", "CSS", "JavaScript"],
+    //   gradient: "from-rose-400 to-orange-500",
+    //   glowColor: "hover:shadow-[0_0_2rem_-0.5rem_#f43f5e]",
+    //   buttonGlow: "hover:shadow-[0_0_1rem_#f43f5e66]"
+    // },
     {
       id: 6,
       src: TaskBoard,
